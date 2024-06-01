@@ -7,12 +7,13 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
+find_package(rosidl_default_generators REQUIRED) # 需要添加的
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
-rosidl_generate_interfaces(${PROJECT_NAME}
+rosidl_generate_interfaces(${PROJECT_NAME} # 需要添加的
   "srv/CompileWords.srv"
+  "action/Fib.action"
 )
 
 if(BUILD_TESTING)

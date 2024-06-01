@@ -1,0 +1,17 @@
+# 定义目标
+int32 order
+---
+# 定义结果
+int32[] sequence
+---
+# 定义反馈
+int32[] partial_sequence
+
+# # 定义目标
+# <goal definition>
+# ---
+# # 定义结果
+# <result definition>
+# ---
+# # 定义反馈
+# <feedback definition>
