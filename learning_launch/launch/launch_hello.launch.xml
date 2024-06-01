@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="learning_topic_py" exec="topic_hello_pub" name="hellopub">
+    </node>
+    <node pkg="learning_topic_py" exec="topic_hello_sub" name="hellosub">
+    </node>
+
+
+    
+
+</launch>
