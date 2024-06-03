@@ -13,6 +13,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))), # 添加launch文件夹下的所有launch文件
+        (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.yaml'))), # 添加config文件夹下的所有yaml文件
     ],
 
     install_requires=['setuptools'],
